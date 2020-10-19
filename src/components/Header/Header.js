@@ -17,7 +17,7 @@ const Header = (props) => (
                 {props.rockets.map((item, index) => (
                     <li key={index} className="item">
                         <Link 
-                            to="/rocket"
+                            to='/rocket'
                             onClick={() => {
                                 props.changeRocket(item);
                             }}
@@ -33,7 +33,7 @@ const Header = (props) => (
                     <NavLink exact to="/" className="item-link" activeClassName="active">Home</NavLink>
                 </li>
                 <li className="item">
-                    <NavLink to="calendar" href="calendar.html" className="item-link" activeClassName="active">Calendar</NavLink>
+                    <NavLink to="/calendar" href="calendar.html" className="item-link" activeClassName="active">Calendar</NavLink>
                 </li>
             </ul>
         </nav>
